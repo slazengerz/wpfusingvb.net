@@ -1,0 +1,39 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdventureWorksVB"
+        mc:Ignorable="d"
+        Title="Adventure Works" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu IsMainMenu="True">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit"
+                          Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Products">
+                <MenuItem Header="List"
+                          Click="ProductList_Click"/>
+                <MenuItem Header="Detail"
+                          Click="ProductDetail_Click"/>
+            </MenuItem>
+            <MenuItem Header="Customer">
+                <MenuItem Header="List"
+                          Click="CustomerList_Click"/>
+                <MenuItem Header="Detail"
+                          Click="CustomerDetail_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1"
+              Name="contentArea"
+              Margin="15,10,15,15">
+
+        </Grid>
+        
+    </Grid>
+</Window>
