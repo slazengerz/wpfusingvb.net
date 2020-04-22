@@ -6,17 +6,13 @@ Imports AdventureWorks.DataLayer
 Public Class ProductViewModel
     Inherits CommonBase
     'comment on vm from vb branch
-    'comment while on master branch
-    'this comment ic reated in vb branch after we have changed this file on master branch.
-        'it is done to check the rebase merge strategy.
     Public Property Entity As Product
     Public Property Products As ObservableCollection(Of Product)
     Sub New()
         LoadProducts()
     End Sub
     Sub LoadProducts()
-
-	    LoadProducts(Nothing)
+        LoadProducts(Nothing)
     End Sub
 
     Function LoadProducts(ByVal startingFilePath As String) As ObservableCollection(Of Product)
