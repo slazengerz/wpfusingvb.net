@@ -5,7 +5,7 @@ Imports System.Linq
 Imports AdventureWorks.DataLayer
 Public Class ProductViewModel
     Inherits CommonBase
-
+    'comment on vm from vb branch
     Public Property Entity As Product
     Public Property Products As ObservableCollection(Of Product)
     Sub New()
